@@ -1,0 +1,17 @@
+{
+  "name": "software-developer-website",
+  "version": "1.0.0",
+  "description": "Personal website for a software developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'No build process needed for static site'"
+  },
+  "keywords": ["portfolio", "website", "developer"],
+  "author": "Software Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
