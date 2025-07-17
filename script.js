@@ -411,3 +411,23 @@ document.head.appendChild(styleSheet);
 
 // Initialize reveal animations
 document.addEventListener('DOMContentLoaded', addRevealAnimations);
+
+// Image slideshow functionality for interests section
+function initializeImageSlideshow() {
+    const images = document.querySelectorAll('.interest-image');
+    let currentIndex = 0;
+    
+    function showNextImage() {
+        // Remove active class from current image
+        images[currentIndex].classList.remove('active');
+        
+        // Move to next image
+        currentIndex = (currentIndex + 1) % images.length;
+        
+        // Add active class to next image
+        images[currentIndex].classList.add('active');
+    }
+    
+    // Change image every 3 seconds
+    setInterval(showNextImage, 3000);
+}
