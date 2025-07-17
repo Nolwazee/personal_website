@@ -412,10 +412,21 @@ document.head.appendChild(styleSheet);
 // Initialize reveal animations
 document.addEventListener('DOMContentLoaded', addRevealAnimations);
 
-// Image slideshow functionality for interests section
+// Initialize image slideshow when page loads
+document.addEventListener('DOMContentLoaded', initializeImageSlideshow);
 function initializeImageSlideshow() {
     const images = document.querySelectorAll('.interest-image');
+    if (images.length === 0) return;
+    
     let currentIndex = 0;
+    
+    // Initially hide all images except the first one
+    images.forEach((img, index) => {
+        img.classList.remove('active');
+        if (index === 0) {
+            img.classList.add('active');
+        }
+    });
     
     function showNextImage() {
         // Remove active class from current image
@@ -428,6 +439,6 @@ function initializeImageSlideshow() {
         images[currentIndex].classList.add('active');
     }
     
-    // Change image every 3 seconds
-    setInterval(showNextImage, 3000);
+    // Change image every 2 seconds
+    setInterval(showNextImage, 2000);
 }

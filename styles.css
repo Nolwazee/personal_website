@@ -568,50 +568,11 @@ body {
 
 .interests-text > p {
     color: #6b7280;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.7;
     font-size: 1.1rem;
 }
 
-.interest-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.interest-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem;
-    background: #f9fafb;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.interest-item:hover {
-    transform: translateX(10px);
-}
-
-.interest-item i {
-    color: #2563eb;
-    font-size: 1.2rem;
-    margin-top: 0.2rem;
-    min-width: 20px;
-}
-
-.interest-item h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #1f2937;
-}
-
-.interest-item p {
-    color: #6b7280;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
 
 /* Contact Section */
 .contact {
