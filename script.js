@@ -109,34 +109,55 @@ contactForm.addEventListener('submit', function(e) {
     
     // Get form data
     const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
+    const formDataObj = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message')
+    };
     
     // Simple form validation
-    if (!name || !email || !subject || !message) {
+    if (!formDataObj.name || !formDataObj.email || !formDataObj.subject || !formDataObj.message) {
         showNotification('Please fill in all fields', 'error');
         return;
     }
     
-    if (!isValidEmail(email)) {
+    if (!isValidEmail(formDataObj.email)) {
         showNotification('Please enter a valid email address', 'error');
         return;
     }
     
-    // Simulate form submission
+    // Submit form to backend
     const submitButton = this.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
     
-    setTimeout(() => {
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        this.reset();
+    // Send to backend
+    fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formDataObj)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+            this.reset();
+        } else {
+            showNotification(data.message || 'Failed to send message. Please try again.', 'error');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showNotification('Failed to send message. Please try again later.', 'error');
+    })
+    .finally(() => {
         submitButton.textContent = originalText;
         submitButton.disabled = false;
-    }, 2000);
+    });
 });
 
 // Email validation function

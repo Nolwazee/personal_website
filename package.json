@@ -4,8 +4,9 @@
   "description": "Personal website for a software developer",
   "main": "index.html",
   "scripts": {
-    "dev": "npx serve .",
-    "start": "npx serve .",
+    "dev": "node server.js",
+    "start": "node server.js",
+    "client": "npx serve .",
     "build": "echo 'No build process needed for static site'"
   },
   "keywords": ["portfolio", "website", "developer"],
