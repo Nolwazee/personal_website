@@ -108,14 +108,14 @@ contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Get form data
-    const formData = new FormData(this);
-    const formDataObj = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message')
+  const formDataObj = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    subject: formData.get('subject'),
+    message: formData.get('message')
     };
-    
+
+
     // Simple form validation
     if (!formDataObj.name || !formDataObj.email || !formDataObj.subject || !formDataObj.message) {
         showNotification('Please fill in all fields', 'error');
