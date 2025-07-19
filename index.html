@@ -266,26 +266,32 @@ My mission is to bridge the digital divide by sharing knowledge, innovating bold
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formsubmit.co/nomfundomanyoni2003@gmail.com" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    
-                    <!-- FormSubmit configuration -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <form id="contact-form" action="https://formsubmit.co/nomfundomanyoni2003@gmail.com" method="POST">
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Your Name" required>
+  </div>
+
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="subject" placeholder="Subject" required>
+  </div>
+
+  <div class="form-group">
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  </div>
+
+  <!-- Redirect to a thank-you page after submission -->
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+  <!-- Disable CAPTCHA if you prefer -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
             </div>
         </div>
     </section>
