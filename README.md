@@ -1,24 +1,18 @@
-# Personal Portfolio Website
+# PERSONAL_WEBSITE
 
-A personal portfolio website to showcase my skills, projects, and interests.
+*Showcase Your Brilliance, Inspire Connections Instantly*
 
-## Features
+![Last Commit](https://img.shields.io/github/last-commit/yourusername/your-repo-name)
+![Custom](https://img.shields.io/badge/last%20commit-last%20saturday-blue)
+![JavaScript](https://img.shields.io/badge/javascript-35.9%25-yellow)
+![Languages](https://img.shields.io/github/languages/count/yourusername/your-repo-name)
 
-*   **About Me:** A brief introduction to who I am.
-*   **Skills:** A list of my technical skills.
-*   **Projects:** A collection of my past and current projects.
-*   **Interests:** A look into my hobbies and interests.
-*   **Contact Me:** A form to get in touch with me.
+---
 
-## Technologies Used
+*Built with the tools and technologies:*
 
-*   HTML
-*   CSS
-*   JavaScript
-*   JSON
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![npm](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## How to View
-
-The website is live and can be viewed at [https://nolwazee.github.io/personal_website/](https://nolwazee.github.io/personal_website/).
-
-To run the project locally, simply open the `index.html` file in your web browser.
