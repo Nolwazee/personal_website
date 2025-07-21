@@ -2,7 +2,7 @@
 
 *Showcase Your Brilliance, Inspire Connections Instantly*
 
-
+![Last Commit](https://img.shields.io/github/last-commit/yourusername/your-repo-name)
 ![Custom](https://img.shields.io/badge/last%20commit-last%20saturday-blue)
 ![JavaScript](https://img.shields.io/badge/javascript-35.9%25-yellow)
 ![Languages](https://img.shields.io/github/languages/count/yourusername/your-repo-name)
