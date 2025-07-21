@@ -2,7 +2,7 @@
 
 *Showcase Your Brilliance, Inspire Connections Instantly*
 
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/your-repo-name)
+
 ![Custom](https://img.shields.io/badge/last%20commit-last%20saturday-blue)
 ![JavaScript](https://img.shields.io/badge/javascript-35.9%25-yellow)
 ![Languages](https://img.shields.io/github/languages/count/yourusername/your-repo-name)
@@ -15,4 +15,27 @@
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![npm](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+
+## Features
+
+*   **About Me:** A brief introduction to who I am.
+*   **Skills:** A list of my technical skills.
+*   **Projects:** A collection of my past and current projects.
+*   **Interests:** A look into my hobbies and interests.
+*   **Contact Me:** A form to get in touch with me.
+
+## Technologies Used
+
+*   HTML
+*   CSS
+*   JavaScript
+*   JSON
+
+## How to View
+
+The website is live and can be viewed at [https://nolwazee.github.io/personal_website/](https://nolwazee.github.io/personal_website/).
+
+To run the project locally, simply open the `index.html` file in your web browser.
+
 
